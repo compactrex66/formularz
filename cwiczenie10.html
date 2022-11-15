@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>strona</title>
+    <link rel="stylesheet" href="mycss3.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formularz</h1>
+        <form>
+            <fieldset>
+                <legend>Dane osobowe</legend>
+                <div class="line">
+                    <label for="Imie">Imie</label>
+                    <input type="text" name="imie" id="imie">
+                </div>
+                <div class="line">
+                    <label for="Nazwisko">Nazwisko</label>
+                    <input type="text" name="Nazwisko" id="Nazwisko">
+                </div>
+                <div class="line">
+                    <label for="Email">Email</label>
+                    <input type="text" name="Email" id="Email">
+                </div>
+                <div class="line">
+                    <label for="dataUrodzenia">Data urodzenia</label>
+                    <input type="date" name="dataUrodzenia" id="dataUrodzenia">
+                </div>
+            </fieldset>
+            <fieldset style="margin-bottom: 50px;">
+                <legend>Inne</legend>
+                <div class="line">
+                    <label for="Wzrost">Wzrost [M]</label>
+                    <input type="number" name="Wzrost" id="Wzrost">
+                </div>
+                <div class="line">
+                    <label for="Masa">Masa [KG]</label>
+                    <input type="number" name="Masa" id="Masa">
+                </div>
+                <div class="line">
+                    <label for="wyborSpecjalisty">Wybór specjalisty</label>
+                    <select name="division" id="division">
+                        <option value="default"></option>
+                        <option value="okulista">Okulista</option>
+                        <option value="laryngolog">Laryngolog</option>
+                        <option value="neurolog">Neurolog</option>
+                        <option value="kardiolog">Kardiolog</option>
+                    </select>
+                </div>
+                <div class="line">
+                    <label for="kolorOczu">Kolor Oczu</label>
+                    <input type="color" name="kolorOczu" id="kolorOczu">
+                </div>
+                <div class="line">
+                    <label for="plik">Wyślij dodatkowe info. w PDF</label>
+                    <input type="file" name="plik" id="plik">
+                </div>
+                <div class="line">
+                    <label for="cisnienie">Ciśnienie</label>
+                    <input type="range" name="cisnienie" id="cisnienie" min="80" max="150">
+                </div>
+                <div class="line">
+                    <label for="inne">Inne</label>
+                    <input type="text" name="inne" id="inne">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
